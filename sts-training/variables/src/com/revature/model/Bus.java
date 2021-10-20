@@ -22,7 +22,7 @@ public class Bus {
 		//
 	}
 	
-	//constructor with 1-parameters
+	//constructor with 1-parameter
 	public Bus(int numberOfWheels) {
 		this.numberOfWheels = numberOfWheels;
 	}
