@@ -1,48 +1,14 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/netbeans
-# Edit at https://www.toptal.com/developers/gitignore?templates=netbeans
-
-### NetBeans ###
-#**/nbproject/private/
-#**/nbproject/Makefile-*.mk
-#**/nbproject/Package-*.bash
-
-#build/
-#nbbuild/
-#dist/
-#nbdist/
-#.nb-gradle/
+# gitignore.io
 
 # ignore all .classpath file
-# sts-training/**/*.classpath
-sts-training/variables/.classpath
-sts-training/static-vs-nonstatic/.classpath
-sts-training/hello-world/.classpath
-sts-training/didum-callable-utility/.classpath
-sts-training/class-n-object/.classpath
+**/sts-training/**/*.classpath
 
 # ignore all .project file
-# sts-training/**/*.project
-sts-training/variables/.project
-sts-training/static-vs-nonstatic/.project
-sts-training/hello-world/.project
-sts-training/didum-callable-utility/.project
-sts-training/class-n-object/.project
+**/sts-training/**/*.project
+
 
 # ignore all .settings
-#sts-training/**/*.settings
-sts-training/variables/.settings
-sts-training/static-vs-nonstatic/.settings
-sts-training/hello-world/.settings
-sts-training/didum-callable-utility/.settings
-sts-training/class-n-object/.settings
+**/sts-training/**/*.settings
 
 # ignore all bin-folders
-sts-training/variables/bin
-sts-training/static-vs-nonstatic/bin
-sts-training/hello-world/bin
-sts-training/didum-callable-utility/bin
-sts-training/class-n-object/bin
-
-
-# End of https://www.toptal.com/developers/gitignore/api/netbeans
+**/sts-training/**/bin
