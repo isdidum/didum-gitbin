@@ -14,15 +14,35 @@
 #.nb-gradle/
 
 # ignore all .classpath file
-sts-training/**/*.classpath
+# sts-training/**/*.classpath
+sts-training/variables/.classpath
+sts-training/static-vs-nonstatic/.classpath
+sts-training/hello-world/.classpath
+sts-training/didum-callable-utility/.classpath
+sts-training/class-n-object/.classpath
 
 # ignore all .project file
-sts-training/**/*.project
+# sts-training/**/*.project
+sts-training/variables/.project
+sts-training/static-vs-nonstatic/.project
+sts-training/hello-world/.project
+sts-training/didum-callable-utility/.project
+sts-training/class-n-object/.project
 
 # ignore all .settings
-sts-training/**/*.settings
+#sts-training/**/*.settings
+sts-training/variables/.settings
+sts-training/static-vs-nonstatic/.settings
+sts-training/hello-world/.settings
+sts-training/didum-callable-utility/.settings
+sts-training/class-n-object/.settings
 
-#ignore all bin-folders
-sts-training/**/bin
+# ignore all bin-folders
+sts-training/variables/bin
+sts-training/static-vs-nonstatic/bin
+sts-training/hello-world/bin
+sts-training/didum-callable-utility/bin
+sts-training/class-n-object/bin
+
 
 # End of https://www.toptal.com/developers/gitignore/api/netbeans
