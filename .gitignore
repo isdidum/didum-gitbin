@@ -6,7 +6,7 @@
 # ---------------------------------------------
 
 # ignore dot-gitignore extension file
-*.gitignore
+.gitignore
 
 # ignore .metadata extension file
 *.metadata
