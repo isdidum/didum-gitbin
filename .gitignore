@@ -1,15 +1,15 @@
 # Author: Abraham, Didum
 # Wednesday, October 20, 2021
 # Portal: gitignore.io
-#
+#----------------------------------------------
 # Revature Training - *.gitignore Configuration
-#
+# ---------------------------------------------
 
 # ignore dot-gitignore extension file
-.gitignore
+*.gitignore
 
 # ignore .metadata extension file
-.metadata
+*.metadata
 
 # ignore all .classpath file
 **/sts-training/**/*.classpath
