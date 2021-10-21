@@ -6,7 +6,7 @@
 #
 
 # ignore dot-gitignore file
-*.gitignore
+.gitignore
 
 # ignore all .classpath file
 **/sts-training/**/*.classpath
