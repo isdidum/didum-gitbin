@@ -9,6 +9,7 @@
 .gitignore
 
 # ignore .metadata extension file
+.metadata
 
 # ignore all .classpath file
 **/sts-training/**/*.classpath
