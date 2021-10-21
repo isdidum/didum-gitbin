@@ -5,8 +5,10 @@
 # Revature Training - *.gitignore Configuration
 #
 
-# ignore dot-gitignore file
+# ignore dot-gitignore extension file
 .gitignore
+
+# ignore .metadata extension file
 
 # ignore all .classpath file
 **/sts-training/**/*.classpath
