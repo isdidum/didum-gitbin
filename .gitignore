@@ -1,11 +1,18 @@
-# gitignore.io
+# Author: Abraham, Didum
+# Wednesday, October 20, 2021
+# Portal: gitignore.io
+#
+# Revature Training - *.gitignore Configuration
+#
+
+# ignore dot-gitignore file
+*.gitignore
 
 # ignore all .classpath file
 **/sts-training/**/*.classpath
 
 # ignore all .project file
 **/sts-training/**/*.project
-
 
 # ignore all .settings
 **/sts-training/**/*.settings
