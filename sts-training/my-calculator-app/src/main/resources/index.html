@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator App</title>
+        <meta charset="utf-8">
+        <meta name="author" content="SitePoint">
+        <meta name="description" content="A simple HTML5 Template for new projects.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script></script>
+    </head>
+    <body>
+        <!-- To run this in browser, startup Javalin in STS...click on Run As Java-Application in STS -->
+        <form action="http://localhost:8080/add" method="POST" target="result">
+            <input type="number" step="0.01" name="number1" placeholder="0" />
+            <input type="number" step="0.01" name="number2" placeholder="0" />
+            
+            <button type="submit">Add Numbers</button>
+        </form>
+        
+        <!--Aim is to display the response from the backend when program is run and to prevent browser refresh-->
+        <iframe name="result" frameborder="0"></iframe>
+        
+    </body>
+</html>
