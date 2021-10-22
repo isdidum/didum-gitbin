@@ -10,16 +10,58 @@
         <script></script>
     </head>
     <body>
-        <!-- To run this in browser, startup Javalin in STS...click on Run As Java-Application in STS -->
-        <form action="http://localhost:8080/add" method="POST" target="result">
+        <!-- 
+            To run this in browser, startup Javalin in STS...click on Run As Java-Application in STS
+            Better way to approach it, is to copy this static html file in source/man/resources in my-calculator-app in STS
+        -->
+        <form action="http://localhost:8080/add" method="POST" target="add">
             <input type="number" step="0.01" name="number1" placeholder="0" />
             <input type="number" step="0.01" name="number2" placeholder="0" />
             
             <button type="submit">Add Numbers</button>
         </form>
-        
         <!--Aim is to display the response from the backend when program is run and to prevent browser refresh-->
-        <iframe name="result" frameborder="0"></iframe>
+        <iframe name="add" frameborder="0"></iframe>
+        
+        <!-- Assignment: Subtraction -->
+        <form action="http://localhost:8080/subtract" method="POST" target="subtract">
+            <input type="number" step="0.01" name="number1" placeholder="0" />
+            <input type="number" step="0.01" name="number2" placeholder="0" />
+            
+            <button type="submit">Subtract Numbers</button>
+        </form>
+        <!--Aim is to display the response from the backend when program is run and to prevent browser refresh-->
+        <iframe name="subtract" frameborder="0"></iframe>
+        
+        <!-- Assignment: Divid Numbers -->
+        <form action="http://localhost:8080/divide" method="POST" target="divide">
+            <input type="number" step="0.01" name="number1" placeholder="0" />
+            <input type="number" step="0.01" name="number2" placeholder="0" />
+            
+            <button type="submit">Divide Numbers</button>
+        </form>
+        <!--Aim is to display the response from the backend when program is run and to prevent browser refresh-->
+        <iframe name="divide" frameborder="0"></iframe>
+        
+        <!-- Assignment: Multiplication -->
+        <form action="http://localhost:8080/multiply" method="POST" target="multiply">
+            <input type="number" step="0.01" name="number1" placeholder="0" />
+            <input type="number" step="0.01" name="number2" placeholder="0" />
+            
+            <button type="submit">Multiply Numbers</button>
+        </form>
+        <!--Aim is to display the response from the backend when program is run and to prevent browser refresh-->
+        <iframe name="multiply" frameborder="0"></iframe>
+        
+        <!-- Assignment: Multiplication -->
+        <form action="http://localhost:8080/power" method="POST" target="power">
+            <input type="number" step="0.01" name="number1" placeholder="0" />
+            <input type="number" step="0.01" name="number2" placeholder="0" />
+            
+            <button type="submit">Power Numbers</button>
+        </form>
+        <!--Aim is to display the response from the backend when program is run and to prevent browser refresh-->
+        <iframe name="power" frameborder="0"></iframe>
         
     </body>
 </html>
