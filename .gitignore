@@ -5,20 +5,23 @@
 # Revature Training - *.gitignore Configuration
 # ---------------------------------------------
 
-# ignore dot-gitignore extension file
+# ignores dot-gitignore extension file
 .gitignore
 
-# ignore .metadata extension file
+# ignores .metadata extension file
 *.metadata
 
-# ignore all .classpath file
+# ignores maven target directory
+**/sts-training/**/target
+
+# ignores all .classpath file
 **/sts-training/**/*.classpath
 
-# ignore all .project file
+# ignores all .project file
 **/sts-training/**/*.project
 
-# ignore all .settings
+# ignores all .settings
 **/sts-training/**/*.settings
 
-# ignore all bin-folders
+# ignores all bin-folders
 **/sts-training/**/bin
