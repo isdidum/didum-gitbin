@@ -36,10 +36,10 @@ public class ArithmeticController {
 	};
 	
 	/*
-	 * subtract() - lambda method that can be passed around
+	 * subtract() - lambda method
 	 */
 	public Handler subtract = (ctx) -> {
-		ctx.result("add lambda invoke");
+		ctx.result("subtract lambda invoke");
 		
 		//Double class has a static method (parseDouble), accepts a String & returns a double primitive of String representation
 		String numStr1 = ctx.formParam("number1");
@@ -53,10 +53,10 @@ public class ArithmeticController {
 	};
 	
 	/*
-	 * multiply() - lambda method that can be passed around
+	 * multiply() - lambda method
 	 */
 	public Handler multiply = (ctx) -> {
-		ctx.result("add lambda invoke");
+		ctx.result("multiply lambda invoke");
 		
 		//Double class has a static method (parseDouble), accepts a String & returns a double primitive of String representation
 		String numStr1 = ctx.formParam("number1");
@@ -70,10 +70,10 @@ public class ArithmeticController {
 	};
 	
 	/*
-	 * divide() - lambda method that can be passed around
+	 * divide() - lambda method
 	 */
 	public Handler divide = (ctx) -> {
-		ctx.result("add lambda invoke");
+		ctx.result("divide lambda invoke");
 		
 		//Double class has a static method (parseDouble), accepts a String & returns a double primitive of String representation
 		String numStr1 = ctx.formParam("number1");
@@ -87,24 +87,34 @@ public class ArithmeticController {
 	};
 	
 	/*
-	 * power() - lambda method that can be passed around
+	 * power() - lambda method
 	 */
 	public Handler power = (ctx) -> {
-		ctx.result("add lambda invoke");
+		ctx.result("power lambda invoke");
 		
 		//Double class has a static method (parseDouble), accepts a String & returns a double primitive of String representation
 		String numStr1 = ctx.formParam("number1");
 		String numStr2 = ctx.formParam("number2");
 		
-		double num1 = Double.parseDouble(numStr1);
-		double num2 = Double.parseDouble(numStr2);
+		//double num1 = Double.parseDouble(numStr1); double num2 = Double.parseDouble(numStr2);
+		ctx.result(arithService.performPower(numStr1, numStr2));
+	};
+	
+	/*
+	 * power() - lambda method
+	 */
+	public Handler exponent = (ctx) -> {
+		ctx.result("exponent lambda invoke");
 		
-		double sum = Math.pow(num1, num2);
-		ctx.result("" + sum);
+		//Double class has a static method (parseDouble), accepts a String & returns a double primitive of String representation
+		String numStr = ctx.formParam("number1");
+		
+		//double num = Double.parseDouble(numStr);
+		ctx.result(arithService.performExponent(numStr));
 	};
 	
 	/**
-	 * registerEndpoint() - invokes all lambdas
+	 * registerEndpoint() - invokes all lambdas on server end points
 	 * @param app
 	 */
 	public void registerEndpoint(Javalin app) {
@@ -114,5 +124,6 @@ public class ArithmeticController {
 		app.post("/multiply", multiply);
 		app.post("/divide", divide);
 		app.post("/power", power);
+		app.post("/exponent", exponent);
 	}
 }

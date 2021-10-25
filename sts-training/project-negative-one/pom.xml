@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.revature</groupId>
+  <artifactId>project-negative-one</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Automate With Selenium</name>
+  <description>
+  	This is Didum Abraham's Project Negative One at Revature's online training program.
+   	This project demonstrates how to setup and configure the necessary files needed to run a Maven Project in Spring Tool Suite 4 (STS4)
+   	with Selenium WebDriver. This selenium webdriver enables backend tasks automation in the browser.
+   </description>
+  
+  <properties>
+  	<project.build.sourceEndcoding>UTF-8</project.build.sourceEndcoding>
+  	
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-java</artifactId>
+  		<version>4.0.0</version>
+  	</dependency>
+  </dependencies>
+</project>

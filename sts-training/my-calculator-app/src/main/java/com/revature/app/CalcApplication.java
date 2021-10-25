@@ -7,7 +7,9 @@ import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 
 /*
- * startup the server by right-clicking -> Run As -> Java Application
+ * startup the server by right-clicking this file w/ main method -> Run As -> Java Application
+ * update the server by right-clicking on Maven Project -> Maven -> Update Project...OK
+ * The whole idea behind Postman is to test out endpoints are working correctly.
  */
 public class CalcApplication { // http://localhost:8080
 
