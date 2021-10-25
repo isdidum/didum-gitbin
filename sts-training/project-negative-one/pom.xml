@@ -9,6 +9,15 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   	This is Didum Abraham's Project Negative One at Revature's online training program.
    	This project demonstrates how to setup and configure the necessary files needed to run a Maven Project in Spring Tool Suite 4 (STS4)
    	with Selenium WebDriver. This selenium webdriver enables backend tasks automation in the browser.
+   	
+   	Remarks:
+   	1. There are two Maven projects linked here
+   		1.1. my-calculator-app
+   		1.2. project-negative-one
+   	2. Fork the repository (didum-gitrep) on GitHub, save to a location of your choice on your local drive
+   	3. Open the projects in Spring Tool Suite 4
+   	4. Go to my-calculator-app - src/main/java - CalcApplication.java ... right-click/Run As/Java Application ... this starts up the server
+   	5. Next, go to project-negative-one - src/main/java - AutomateWithSelenium.java ... right-click/Run As/Java Application ... this uses Selenium to automate tasks in the browser
    </description>
   
   <properties>
@@ -16,7 +25,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   	
   	<maven.compiler.source>1.8</maven.compiler.source>
   	<maven.compiler.target>1.8</maven.compiler.target>
+  	<maven.version></maven.version>
   </properties>
+  
+  <developers>
+  	<developer>
+  		<id>Batch location: UTA</id>
+  		<name>Abraham, Didum</name>
+  		<email>iusc13@hushmail.com</email>
+  	</developer>
+  </developers>
   
   <dependencies>
   	<dependency>
