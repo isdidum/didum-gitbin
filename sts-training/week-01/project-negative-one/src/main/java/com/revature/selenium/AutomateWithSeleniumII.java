@@ -22,7 +22,7 @@ public class AutomateWithSeleniumII {
 		dr.manage().window().setPosition(new Point(300, 200));
 		dr.manage().window().setSize( new Dimension(840,470) );
 		
-		try { //J-Maurice_R
+		try {
 			//Use Selenium Locators to find elements
 			dr.findElement(By.id("add-input1")).sendKeys("10.5"+Keys.ENTER); //uses explicit wait
 			dr.findElement(By.id("add-input2")).sendKeys("12.25"+Keys.ENTER);
