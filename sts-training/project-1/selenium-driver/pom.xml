@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.revature</groupId>
+  <artifactId>project-negative-one</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Automate With Selenium</name>
+  <description>
+  	This is Didum Abraham's Project Negative One at Revature's online training program.
+   	This project demonstrates how to setup and configure the necessary files needed to run a Maven Project in Spring Tool Suite 4 (STS4)
+   	with Selenium WebDriver. This selenium webdriver enables backend tasks automation in the browser.
+   	
+   	Remarks:
+   	0. To obtain Maven version, type the following in CMD: mvn --version
+   	1. There are two Maven projects linked here, and they're:
+   		1.1. my-calculator-app
+   		1.2. project-negative-one
+   	2. Fork the repository (didum-gitrep) on GitHub, then save to a location of choice on your local drive
+   	3. Open the projects in Spring Tool Suite 4
+   	4. Go to my-calculator-app - src/main/java - CalcApplication.java ... right-click/Run As/Java Application ... this starts up the server (Javalin)
+   	5. Next, go to project-negative-one - src/main/java - AutomateWithSeleniumII.java ... right-click/Run As/Java Application ... this uses Selenium to automate tasks in the browser
+   </description>
+  
+  <properties>
+  	<project.build.sourceEndcoding>UTF-8</project.build.sourceEndcoding>
+  	
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  	
+  	<maven.version>3.8.3</maven.version>
+  </properties>
+  
+  <developers>
+  	<developer>
+  		<id>Batch location: UTA</id>
+  		<name>Abraham, Didum</name>
+  		<email>iusc13@hushmail.com</email>
+  	</developer>
+  </developers>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-java</artifactId>
+  		<version>4.0.0</version>
+  	</dependency>
+  </dependencies>
+</project>

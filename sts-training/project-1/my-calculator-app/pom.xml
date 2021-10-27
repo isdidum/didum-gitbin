@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.revature</groupId>
+  <artifactId>my-calculator-app</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Calculator App</name>
+  <url>https://maven.apache.org</url>
+  <description>
+  	This is an app that is intended to allow users to perform basic arithmetic over a web framework known as javalin.
+  	In particular, the Javalin web framework uses a web server known as Jetty behind the scenes.
+  	Users will be able to send Http requests to this server and receive a responsde in the form of the arithmetic result.
+  </description>
+  
+  <properties>
+  	<!-- add project build type -->
+  	<project.build.sourceEndcoding>UTF-8</project.build.sourceEndcoding>
+  	
+  	<!-- add maven compiler version -->
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  	
+  	<!-- add maven version -->
+  	<maven.version>3.8.3</maven.version>
+  </properties>
+  
+  <developers>
+  	<developer>
+  		<id>Batch location: UTA</id>
+  		<name>Abraham, Didum</name>
+  		<email>iusc13@hushmail.com</email>
+  	</developer>
+  </developers>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>io.javalin</groupId>
+  		<artifactId>javalin</artifactId>
+  		<version>4.1.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>ch.qos.logback</groupId>
+  		<artifactId>logback-classic</artifactId>
+  		<version>1.2.6</version>
+  	</dependency>
+  </dependencies>
+</project>
