@@ -13,6 +13,7 @@
 
 # ignores .factorypath
 *.factorypath
+**/sts-training/**/*.factorypath
 
 # ignores maven target directory
 **/sts-training/**/target
