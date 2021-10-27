@@ -11,6 +11,9 @@
 # ignores .metadata extension file
 *.metadata
 
+# ignores .factorypath
+*.factorypath
+
 # ignores maven target directory
 **/sts-training/**/target
 
