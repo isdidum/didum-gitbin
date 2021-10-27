@@ -26,13 +26,11 @@ public class AutomateWithSeleniumII {
 			//Use Selenium Locators to find elements
 			dr.findElement(By.id("add-input1")).sendKeys("10.5"+Keys.ENTER); //uses explicit wait
 			dr.findElement(By.id("add-input2")).sendKeys("12.25"+Keys.ENTER);
-			new WebDriverWait(dr, Duration.ofSeconds(25)).
-			until(ExpectedConditions.elementToBeClickable(By.id("add-btn"))).click();
-			dr.switchTo().frame("add");
-			if( dr.findElement(By.name("add")).getText().length() != 0 ) {
-				println("Addition of (10.5 + 12.5) = "+dr.findElement(By.name("add")).getText());
-				dr.switchTo().defaultContent();
-			}
+			new WebDriverWait(dr, Duration.ofSeconds(25)).until(ExpectedConditions.elementToBeClickable(By.id("add-btn"))).click();
+			// if success, repeat for the rest
+			println("Addition of (10.5 + 12.5) = "+dr.findElement(By.id("i-add")).getText());
+			dr.switchTo().frame("i-add");
+			dr.switchTo().defaultContent();
 			
 			//Use Selenium Locators to find elements
 			dr.findElement(By.id("sub-input1")).sendKeys("10.5"+Keys.ENTER);

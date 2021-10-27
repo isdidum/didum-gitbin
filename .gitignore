@@ -12,7 +12,6 @@
 *.metadata
 
 # ignores .factorypath
-*.factorypath
 **/sts-training/**/*.factorypath
 
 # ignores maven target directory
