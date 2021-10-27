@@ -11,13 +11,14 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
    	with Selenium WebDriver. This selenium webdriver enables backend tasks automation in the browser.
    	
    	Remarks:
-   	1. There are two Maven projects linked here
+   	0. To obtain Maven version, type the following in CMD: mvn --version
+   	1. There are two Maven projects linked here, and they're:
    		1.1. my-calculator-app
    		1.2. project-negative-one
-   	2. Fork the repository (didum-gitrep) on GitHub, save to a location of your choice on your local drive
+   	2. Fork the repository (didum-gitrep) on GitHub, then save to a location of choice on your local drive
    	3. Open the projects in Spring Tool Suite 4
-   	4. Go to my-calculator-app - src/main/java - CalcApplication.java ... right-click/Run As/Java Application ... this starts up the server
-   	5. Next, go to project-negative-one - src/main/java - AutomateWithSelenium.java ... right-click/Run As/Java Application ... this uses Selenium to automate tasks in the browser
+   	4. Go to my-calculator-app - src/main/java - CalcApplication.java ... right-click/Run As/Java Application ... this starts up the server (Javalin)
+   	5. Next, go to project-negative-one - src/main/java - AutomateWithSeleniumII.java ... right-click/Run As/Java Application ... this uses Selenium to automate tasks in the browser
    </description>
   
   <properties>
@@ -25,7 +26,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   	
   	<maven.compiler.source>1.8</maven.compiler.source>
   	<maven.compiler.target>1.8</maven.compiler.target>
-  	<maven.version></maven.version>
+  	
+  	<maven.version>3.8.3</maven.version>
   </properties>
   
   <developers>
