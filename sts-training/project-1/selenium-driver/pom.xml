@@ -4,7 +4,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   <groupId>com.revature</groupId>
   <artifactId>project-negative-one</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Automate With Selenium</name>
+  <name>Browser Automation With Selenium</name>
   <description>
   	This is Didum Abraham's Project Negative One at Revature's online training program.
    	This project demonstrates how to setup and configure the necessary files needed to run a Maven Project in Spring Tool Suite 4 (STS4)
@@ -14,11 +14,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
    	0. To obtain Maven version, type the following in CMD: mvn --version
    	1. There are two Maven projects linked here, and they're:
    		1.1. my-calculator-app
-   		1.2. project-negative-one
+   		1.2. selenium-driver
    	2. Fork the repository (didum-gitrep) on GitHub, then save to a location of choice on your local drive
    	3. Open the projects in Spring Tool Suite 4
    	4. Go to my-calculator-app - src/main/java - CalcApplication.java ... right-click/Run As/Java Application ... this starts up the server (Javalin)
-   	5. Next, go to project-negative-one - src/main/java - AutomateWithSeleniumII.java ... right-click/Run As/Java Application ... this uses Selenium to automate tasks in the browser
+   	5. Next, go to selenium-driver - src/main/java - AutomateWithSeleniumII.java ... right-click/Run As/Java Application ... this uses Selenium to automate tasks in the browser
    </description>
   
   <properties>
