@@ -5,7 +5,7 @@ This git repository is created to support collaboration with team members on ass
 Hence, it contains current workflow tasks: projects, assignments & exercises w.r.t. Revature's online Software Training Program.
 
 This file has been generated for documentation purposes
-Revised & updated on Wednesday, October 28, 2021
+Revised & updated on Thursday, October 28, 2021
 
 -----
 Didum
