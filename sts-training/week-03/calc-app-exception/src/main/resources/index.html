@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Abraham, Didum"/>
+        <meta name="description" content="A simple HTML5 Template for new projects."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="generator" content="JavaScript, HTML5, CSS3, JSON, JQuery" />
+        
+        <title>Calculator App | Revature - Training</title>
+        <style>
+            table.html5-table {
+                width: 50%; height: 50%; padding: 1px; margin: 0px;
+                border: 1px dashed #999; background-image:
+                    linear-gradient(to right, rgba(255,100,100,0.95), rgba(255,200,200,1.00));
+            }
+            iframe.prevent-browser-refresh {
+                width: 260px; height: 40px;
+                border: 1px solid #ddd;
+            }
+            th.table-header {
+                position: relative; left:-50px; margin: 0px; padding:0px;
+            }
+            button {
+                background-image: linear-gradient(gray,#999,gray);
+                -moz-border-radius: 5.5px; border-radius: 5.5px; -webkit-border-radius: 5.5px;
+                font-weight: 600;
+            }
+            button:hover {
+                /*background-image: linear-gradient(gray,#999,gray);*/
+                background-image: linear-gradient(#d51149,#d51149,#d51149);
+                color: skyblue; font-weight: 600;
+                -moz-border-radius: 5.5px; border-radius: 5.5px; -webkit-border-radius: 5.5px;
+            }
+            td.developer {
+                position: relative; font-family: consolas; font-size: 0.9em; font-weight: normal;
+            }
+        </style>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            function runJQuery(){
+                var inner = $(".prevent-browser-refresh");
+                if( inner.html().length === 0 ) {
+                    inner.css('background','rgba(255,100,145,0.40)');
+                } else if( inner.html().length !== 0 ) {
+                    inner.css('background','rgba(255,100,145,0.90)');
+                }
+                //project-neg-one
+            }
+        </script>
+        
+    </head>
+    <body onload="javascript:runJQuery();">
+        
+        <section>
+            <h2>Server-Side Client Application with Exceptions</h2>
+        </section>
+        <!-- 
+            To run this in the browser, goto my-calculator-app project, open CalcApplication.java 
+            then startup Javalin in STS by right-clicking -> Run As -> Java-Application
+            Insdustry standard approach, copy this static html file into source/man/resources 
+            in Maven project (my-calculator-app)
+        -->
+        <table class="html5-table">
+            <tr> <!--tr: defines table row-->
+                <th class="table-header">Addition Service</th>
+                <th class="table-header">Subtraction Service</th>
+                <th class="table-header">Power Service</th>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://localhost:8080/add" method="POST" target="add">
+                        <input id="add-input1" type="number" step="0.01" name="number1" placeholder="0" size="10" />
+                        <input id="add-input2" type="number" step="0.01" name="number2" placeholder="0" size="10"/>
+
+                        <button id="add-btn" type="submit">Add</button>
+                    </form>
+                    <!--
+                        Aim is to display the response from the backend when program is run and to prevent browser refresh by attaching an iframe
+                        endpoint: http://localhost:8080/add
+                        target='add' in form-action must match name='add' in iframe-section
+                    -->
+                    <iframe id="i-add" class="prevent-browser-refresh" name="add" frameborder="0"></iframe>
+                </td>
+                <td><!-- Assignment: Subtraction -->
+                    <form action="http://localhost:8080/subtract" method="POST" target="subtract">
+                        <input id="sub-input1" type="number" step="0.01" name="number1" placeholder="0" size="10" />
+                        <input id="sub-input2" type="number" step="0.01" name="number2" placeholder="0" size="10" />
+
+                        <button id="sub-btn" type="submit">Subtract</button>
+                    </form>
+                    <iframe id="i-subtract" class="prevent-browser-refresh" name="subtract" frameborder="0"></iframe>
+                </td>
+                <td><!-- Assignment: Power -->
+                    <form action="http://localhost:8080/power" method="POST" target="power">
+                        <input id="pow-input1" type="number" step="0.01" name="number1" placeholder="0" size="10" />
+                        <input id="pow-input2" type="number" step="0.01" name="number2" placeholder="0" size="10" />
+
+                        <button id="pow-btn" type="submit">Power</button>
+                    </form>
+                    <iframe id="i-power" class="prevent-browser-refresh" name="power" frameborder="0"></iframe>
+                </td>
+            </tr>
+            
+            <tr>
+                <th class="table-header">Multiplication Service</th>
+                <th class="table-header">Division Service</th>
+                <th class="table-header">Exponential Service</th>
+            </tr>
+            <tr>
+                <td><!-- Assignment: Multiplication -->
+                    <form action="http://localhost:8080/multiply" method="POST" target="multiply">
+                        <input id="mul-input1" type="number" step="0.01" name="number1" placeholder="0" size="10" />
+                        <input id="mul-input2" type="number" step="0.01" name="number2" placeholder="0" size="10" />
+
+                        <button id="mul-btn" type="submit">Multiply</button>
+                    </form>
+                    <iframe id="i-multiply" class="prevent-browser-refresh" name="multiply" frameborder="0"></iframe>
+                </td>
+                <td><!-- Assignment: Divid Numbers -->
+                    <form action="http://localhost:8080/divide" method="POST" target="divide">
+                        <input id="quo-input1" type="number" step="0.01" name="number1" placeholder="0" size="10" />
+                        <input id="quo-input2" type="number" step="0.01" name="number2" placeholder="0" size="10" />
+
+                        <button id="quo-btn" type="submit">Divide</button>
+                    </form>
+                    <iframe id="i-divide" class="prevent-browser-refresh" name="divide" frameborder="0"></iframe>
+                </td>
+                <td><!-- Assignment: Exponent -->
+                    <form action="http://localhost:8080/exponent" method="POST" target="exponent">
+                        <input id="exp-input1" type="number" step="0.01" name="number1" placeholder="0" size="10" />
+                        <button id="exp-btn" type="submit">Exponent</button>
+                    </form>
+                    <iframe id="i-exponent" class="prevent-browser-refresh" name="exponent" frameborder="0"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3" class="developer">
+                    Prepared By: Didum
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
