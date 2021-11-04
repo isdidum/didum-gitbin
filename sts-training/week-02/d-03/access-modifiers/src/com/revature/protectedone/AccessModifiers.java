@@ -3,7 +3,7 @@ package com.revature.protectedone;
 import com.revature.accessmodifier.Person;
 import com.revature.protectedtwo.ProtectedSubClass;
 
-public class AccessModifiers {
+public class AccessModifiers { //lab experiements
 
 	public static void main(String[] args) {
 		Person per = new Person();
