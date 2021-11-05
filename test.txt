@@ -1,4 +1,0 @@
-October 20, 2021
-
-This is a test for git commit and other relevant git-commands
-https://github.com/211018jwa

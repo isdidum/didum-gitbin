@@ -1,0 +1,8 @@
+October 20, 2021
+
+This is a test for git commit and other relevant git-commands
+https://github.com/211018jwa
+
+Updates
+    1. Reconfigured repository file structures: Fri, Nov 05, 2021
+    2. Renamed repository [didum-gitrepo, didum-online] - [didum-gitbin]
