@@ -1,5 +1,5 @@
-Welcome to Didum's Repository | didum-online
-Created Wednesday, 10/20/2021
+Welcome to Didum's Repository | didum-gitbin
+Created Wednesday on 10/20/2021
 
 Greetings,
 
@@ -8,7 +8,7 @@ This github repository is created to support collaboration with team members on 
 Also to show my usage & understanding of Git, as an open-source, distributed, version control system along with its platform - GitHub. Hence, this repository contains current workflow tasks: projects, assignments & exercises w.r.t. Revature's online software training program.
 
 This file has been generated for documentation purposes
-Revised & updated on Friday, October 29, 2021
+Revised & updated on Friday, November 05, 2021
 
 -----
 Didum
