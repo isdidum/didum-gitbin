@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.revature</groupId>
+  <artifactId>jdbc-postgres-connection</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>JDBC Postgres Connector</name>
+  <description>This is Maven application. Also this is jdbc-demo-1</description>
+  
+  <properties>
+  	<!-- add project build type -->
+  	<project.build.sourceEndcoding>UTF-8</project.build.sourceEndcoding>
+  	
+  	<!-- add maven compiler version -->
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  	
+  	<!-- add maven version -->
+  	<maven.version>3.8.3</maven.version>
+  </properties>
+  
+  <developers>
+  	<developer>
+  		<id>Batch location: UTA</id>
+  		<name>Abraham, Didum</name>
+  		<email>iusc13@hushmail.com</email>
+  	</developer>
+  </developers>
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+	<dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>42.3.1</version>
+	</dependency>
+  </dependencies>
+  
+</project>
